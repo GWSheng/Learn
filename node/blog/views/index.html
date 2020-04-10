@@ -1,0 +1,12 @@
+{{ extend "./_layout/home.html" }}
+{{ block "test"}}
+	{{if user}}
+		<h2>{{user.name}}</h2>
+	{{else}}
+		<h2>没有信息</h2>
+	{{/if}}
+{{ /block }}
+
+{{ block "footer"}} 
+	<script src="/public/js/index.js" ></script>
+{{ /block }}
